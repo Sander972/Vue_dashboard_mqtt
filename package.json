@@ -1,0 +1,11 @@
+{
+  "name": "mqtt_dashboard_vue_live-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "author": "Sander",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

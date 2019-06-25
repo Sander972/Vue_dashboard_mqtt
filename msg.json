@@ -1,0 +1,46 @@
+{
+    "device": "camera",
+    "time": "02:01:41",
+    "dht22_1": {
+        "humidity": 50.7,
+        "temperature": 27.9,
+        "heat_index": 28.39844
+    },
+    "dht22_2": {
+        "humidity": 56.3,
+        "temperature": 26.7,
+        "heat_index": 27.49211
+    },
+    "bme680": {
+        "humidity": 51.283,
+        "temperature": 27.38,
+        "pressure": 1009.03,
+        "gas_resistance": 139.823,
+        "circa_altitude": 35.02677
+    }
+}
+
+
+
+
+pubsubclient.h --> 26      #define MQTT_MAX_PACKET_SIZE 512
+
+{
+    "device" : "camera",
+    "time" : "20:12:19",
+    "dht22_1" : {
+      "temperature" : 27.2,
+      "humidity" : 47.4,
+      "heat index" : 27.441
+    },
+    "dht22_2" : {
+      "status" : "err sensor"
+    },
+    "bme680" : {
+      "temperature" : 26.15,
+      "humidity" : 51.077,
+      "pressure" : 1008.19,
+      "gas resistance" : 70.364,
+      "circa altitude" : 42.38071
+    }
+  }
