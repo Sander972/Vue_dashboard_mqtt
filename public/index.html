@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Realtime Dashboard</title>
+
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+
+  <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+  <script src="https://unpkg.com/vue-mqtt"></script>
+
+
+
+  <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <div class="content-area">
+      <div class="container-fluid">
+        <div class="main">
+
+          <!--### humidity ###-->
+          <div class="row mt-4">
+
+            <div class="col-md">
+              <div class="box columnbox mt-4">
+                <div id="humi1"> </div>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="box columnbox mt-4">
+                <div id="humi2"> </div>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="box columnbox mt-4">
+                <div id="humi3"> </div>
+              </div>
+            </div>
+          </div>
+          <!--### humidity ###-->
+
+          <!--### temperature ###-->
+          <div class="row mt-4">
+
+            <div class="col-md">
+              <div class="box columnbox mt-4">
+                <div id="temp1"> </div>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="box columnbox mt-4">
+                <div id="temp2"> </div>
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="box columnbox mt-4">
+                <div id="temp3"> </div>
+              </div>
+            </div>
+          </div>
+          <!--### temperature ###-->
+
+          <!--### various bme680 data ###-->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="box radialbox mt-5">
+                <div id="test1"> </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="box radialbox mt-5">
+                <div id="test2"> </div>
+              </div>
+            </div>
+          </div>
+          <!--### various bme680 data ###-->
+
+
+          <!--### log section ###-->
+          <div class="row" style="color:aqua">
+            <div class="col">
+              <div class="box radialbox mt-4">
+                <div id="telemetry">{{log}} </div>
+              </div>
+            </div>
+          </div>
+          <!--### log section ###-->
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src='https://cdn.jsdelivr.net/npm/apexcharts'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js'></script>
+
+
+
+  <script src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>
