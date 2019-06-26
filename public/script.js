@@ -39,10 +39,6 @@ new Vue({
       msg = JSON.parse(message);
       //console.log(msg)
 
-
-      this.$data.device = msg.device
-      this.$data.time = msg.time
-
       if (msg.dht22_1.status || msg.dht22_2.status == "err sensor") {
         //todo --> display an error inside the sensor indicator
       }
@@ -288,7 +284,7 @@ var options = {
           show: true,
           label: 'Temperature 1',
           formatter: function (val) {
-            return ''
+            return msg.dht22_1.temperature
           },
         }
       }
@@ -327,7 +323,7 @@ var options = {
           show: true,
           label: 'Temperature 2',
           formatter: function (val) {
-            return ''
+            return msg.dht22_2.temperature
           },
         }
       }
@@ -351,7 +347,7 @@ var options = {
     height: 350,
     type: 'radialBar',
     toolbar: {
-      show: true
+      show: false
     }
   },
   plotOptions: {
