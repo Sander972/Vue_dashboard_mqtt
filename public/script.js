@@ -434,7 +434,7 @@ temp3.render();
 
 var options = {
   chart: {
-    height: 350,
+    height: 300,
     type: 'line',
     stacked: false,
   },
@@ -514,7 +514,8 @@ var optionsArea = {
   chart: {
     id: 'yt',
     group: 'social',
-    type: 'area'
+    type: 'area',
+	height: 300
   },
   colors: ['#00E396'],
   series: [
